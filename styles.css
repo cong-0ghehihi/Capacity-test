@@ -110,9 +110,14 @@ body {
   color: #4e5c58;
 }
 
+hr{
+min-width: 1000px;
+}
+
 /* Layout: Floral & Decor Section */
 .floral-decor {
   margin-top: 66px;
+  padding: 0 10px;
 }
 
 /* Floral & Decor Section: Title */
@@ -124,31 +129,56 @@ body {
   color: #462b20;
 }
 
+/* Floral & Decor Section: Content Grid */
 .floral-decor .content {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 242px;
-  margin-right: 292px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1300px; 
 }
+
+/* Responsive: Content Grid */
+@media (max-width: 1024px) {
+  .floral-decor .content {
+    grid-template-columns: 1fr; 
+  }
+}
+
 /* Floral & Decor Section: Left Panel */
 .floral-decor .content .left-panel {
-  width: 45%;
   margin-top: 54px;
+}
+
+@media (min-width: 1440px) {
+  .floral-decor .content .left-panel{
+padding-right: 120px;
+  }
 }
 
 .floral-decor .content .left-panel .image img {
   width: 100%;
 }
 
+/* Floral & Decor Section: Dropdown List */
 .floral-decor .content .left-panel .dropdown-list {
   margin-top: 24px;
   list-style: none;
+  padding: 0;
 }
 
 .floral-decor .content .left-panel .dropdowm-item {
   padding-top: 18px;
   padding-bottom: 22px;
   border-top: 1px #ecedec solid;
+}
+
+/* Responsive: Dropdown Item */
+@media (max-width: 768px) {
+  .floral-decor .content .left-panel .dropdowm-item {
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
 }
 
 .floral-decor .content .left-panel .dropdowm-item .dropdown-header {
@@ -158,13 +188,27 @@ body {
   justify-content: space-between;
 }
 
-.floral-decor .content .left-panel .dropdowm-item .dropdowm-content {
+/* Responsive: Dropdown Header */
+@media (max-width: 768px) {
+  .floral-decor .content .left-panel .dropdowm-item .dropdown-header {
+    font-size: 18px;
+  }
+}
+
+.floral-decor .content .left-panel .dropdowm-item .dropdown-content {
   padding-top: 16px;
   font-size: 15px;
 }
-.dropdown-content {
-  font-family: "Inter" ;
 
+/* Responsive: Dropdown Content */
+@media (max-width: 768px) {
+  .floral-decor .content .left-panel .dropdowm-item .dropdown-content {
+    font-size: 14px; 
+  }
+}
+
+.dropdown-content {
+  font-family: "Inter";
   display: none;
 }
 
@@ -176,6 +220,13 @@ body {
 }
 
 /* Floral & Decor Section: Right Panel */
-.floral-decor .content .right-panel {
-  width: 50%;
+.floral-decor .content .right-panel img {
+  width: 100%;
+}
+
+/* Responsive: Right Panel */
+@media (max-width: 768px) {
+  .floral-decor .content .right-panel {
+    margin-top: 20px;
+  }
 }
