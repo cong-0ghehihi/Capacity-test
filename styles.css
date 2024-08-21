@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffdf4;
+}
+
+/* Typography */
+.courses {
+  font-family: "Poppins", sans-serif;
+}
+
+.floral-decor {
+  font-family: "Instrument Serif", serif;
+}
+
+/* Layout: Courses Section */
+.courses {
+  padding: 70px 194px 30px 194px;
+}
+
+/* Courses Section: Title */
+.courses .title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 519px;
+  margin-bottom: 40px;
+}
+
+.courses .title h2 {
+  font-size: 45px;
+  color: #374639;
+}
+
+.courses .title p {
+  font-size: 19px;
+  color: #3f514b;
+}
+
+/* Courses Section: Courses List */
+.courses .courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Courses Section: Courses Card */
+.courses .courses-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.courses .course-contents {
+  width: 80%;
+}
+
+.courses .course-contents .name {
+  color: #414f42;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.courses .course-contents .description {
+  color: #3f514b;
+  margin-bottom: 2px;
+}
+
+.courses .course-contents .price .old-price {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: #72776c;
+}
+
+.courses .course-contents .price .new-price {
+  font-size: 18px;
+  color: #3f514b;
+}
+
+/* Courses Section: Course Details */
+.courses .course-details {
+  list-style: none;
+}
+
+.courses .course-details li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 10px 0;
+  border-top: 1px #ecedec solid;
+}
+
+.courses .course-details li:last-child {
+  border-bottom: 1px #ecedec solid;
+}
+
+.courses .course-details div {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #72776c;
+}
+
+.courses .course-details p {
+  font-size: 14px;
+  color: #4e5c58;
+}
+
+/* Layout: Floral & Decor Section */
+.floral-decor {
+  margin-top: 66px;
+}
+
+/* Floral & Decor Section: Title */
+.floral-decor h2 {
+  font-size: 58px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 76px;
+  color: #462b20;
+}
+
+.floral-decor .content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 242px;
+  margin-right: 292px;
+}
+/* Floral & Decor Section: Left Panel */
+.floral-decor .content .left-panel {
+  width: 45%;
+  margin-top: 54px;
+}
+
+.floral-decor .content .left-panel .image img {
+  width: 100%;
+}
+
+.floral-decor .content .left-panel .dropdown-list {
+  margin-top: 24px;
+  list-style: none;
+}
+
+.floral-decor .content .left-panel .dropdowm-item {
+  padding-top: 18px;
+  padding-bottom: 22px;
+  border-top: 1px #ecedec solid;
+}
+
+.floral-decor .content .left-panel .dropdowm-item .dropdown-header {
+  align-items: center;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.floral-decor .content .left-panel .dropdowm-item .dropdowm-content {
+  padding-top: 16px;
+  font-size: 15px;
+}
+.dropdown-content {
+  font-family: "Inter" ;
+
+  display: none;
+}
+
+.floral-decor .content .left-panel .dropdowm-item .dropdown-header img {
+  width: 20px;
+  height: 10px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Floral & Decor Section: Right Panel */
+.floral-decor .content .right-panel {
+  width: 50%;
+}
